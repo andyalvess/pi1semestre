@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SOS - Security Online System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Geral CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.png" sizes="16x16">
+  </head>
+
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="login.html"></a>
+        </div><!--/.navbar-header -->
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="login.html">Sair<img src="css/img/logout.png"></a></li>
+          </ul>         
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </nav>
+    <!-- FIM MENU -->
+
+    <div class="container internas">
+      <div class="seguranca">
+      
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Painel de Controle de Incidentes - Órgãos de Segurança</h1>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-10 filtro">
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <h2 class="filtrar">Filtrar por:</h2> 
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <h2>Status</h2>
+                <select>
+                    <option selected>Todos Status</option>
+                    <option>Aberto</option>
+                    <option>Andamento</option>
+                    <option>Finalizado</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <h2>Categoria</h2>
+                <select>
+                    <option selected>Todas Categorias</option>
+                    <option>Ameaça</option>
+                    <option>Assalto</option>
+                    <option>Furto</option>
+                    <option>Suspeita</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table col-xs-12 col-sm-12 col-md-12">
+            <table>
+                <tr>
+                    <th class="col-xs-12 col-sm-12 col-md-1"> Categoria </th>
+                    <th class="col-xs-12 col-sm-12 col-md-3"> Descrição </th>
+                    <th class="col-xs-12 col-sm-12 col-md-3"> Local </th>
+                    <th class="col-xs-12 col-sm-12 col-md-2"> Status </th>
+                    <th class="col-xs-12 col-sm-12 col-md-3"> Ação </th>
+                </tr>
+
+                <tr>
+                    <td class="col-xs-12 col-sm-12 col-md-1 status"> Furto </td>
+                    <td class="col-xs-12 col-sm-12 col-md-3">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod...
+                    </td>
+                    <td class="col-xs-12 col-sm-12 col-md-3"> Estádio Olímpico de Desportos Aquáticos </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-2 status">
+                        <span id="status-1">Aberto</span>
+                        <span id="status-2" class="hide">Andamento</span>
+                    </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3"> 
+                        <button class="btn btn-lg btn-primary btn-block" type="submit" id="button-1">
+                            <span id="atend-1">Atender Ocorrência</span>
+                            <span id="fecha-1" class="hide">Fechar Ocorrência</span>
+                        </button>
+                        <span class="detalhe"><a href="detalhe.html">ver detalhes</a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-xs-12 col-sm-12 col-md-1 status"> Ameaça</td>
+                    <td class="col-xs-12 col-sm-12 col-md-3">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod...
+                    </td>
+                    <td class="col-xs-12 col-sm-12 col-md-3"> Centro Nacional de Hipismo </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-2 status">
+                        <span id="status-3">Aberto</span>
+                        <span id="status-4" class="hide">Andamento</span>
+                    </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3"> 
+                        <button class="btn btn-lg btn-primary btn-block" type="submit" id="button-2">
+                            <span id="atend-2">Atender Ocorrência</span>
+                            <span id="fecha-2" class="hide">Fechar Ocorrência</span>
+                        </button>
+                        <span class="detalhe"><a href="detalhe.html">ver detalhes</a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-xs-12 col-sm-12 col-md-1 status"> Assalto </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod...
+                    </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3"> Ginásio do Maracanãzinho </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-2 status">
+                        <span id="status-5">Andamento</span>
+                        <span id="status-6" class="hide">Finalizado</span>
+                    </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit" id="button-3">
+                            <span id="fecha-3">Fechar Ocorrência</span>
+                            <span id="hist-1" class="hide">Ver Histórico</span>
+                        </button>
+                        <span class="detalhe"><a href="detalhe.html">ver detalhes</a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-xs-12 col-sm-12 col-md-1 status"> Suspeita </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod...
+                    </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3"> Parque do Flamengo </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-2 status">
+                        Finalizado
+                    </td>
+
+                    <td class="col-xs-12 col-sm-12 col-md-3">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Ver Histórico</button>
+                        <span class="detalhe"><a href="detalhe.html">ver detalhes</a></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+      </div><!-- /seguranca -->
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    $("#button-1").click(function(){
+        $("#status-1, #atend-1").addClass("hide");
+        $("#status-2, #fecha-1").removeClass("hide");
+    });
+    $("#button-2").click(function(){
+        $("#status-3, #atend-2").addClass("hide");
+        $("#status-4, #fecha-2").removeClass("hide");
+    });
+    $("#button-3").click(function(){
+        $("#status-5, #fecha-3").addClass("hide");
+        $("#status-6, #hist-1").removeClass("hide");
+    });
+    </script>
+  </body>
+</html>

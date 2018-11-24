@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SOS - Security Online System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Geral CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.png" sizes="16x16">
+  </head>
+
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"></a>
+        </div><!--/.navbar-header -->
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><img src="css/img/spanish.png" title="Versión española" class="lang"></a></li>
+            <li><a href="#"><img src="css/img/english.png" title="English version" class="lang right"></a></li>
+            <li><a href="#">Sobre<img src="css/img/about.png"></a></li>
+            <li><a href="#">Configuração<img src="css/img/settings.png"></a></li>
+            <li><a href="index.html">Sair<img src="css/img/logout.png"></a></li>
+          </ul>         
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </nav>
+    <!-- FIM MENU -->
+
+    <div class="container internas">
+      <div class="infos">
+      
+        <div class="categorias">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Selecione a categoria do incidente:</h1>
+          </div>
+          
+          <div id="1" class="col-xs-3 col-sm-4 col-md-3">
+            <div class="cat fire"></div>
+            <p>Incêndio</p>
+          </div>
+          <div id="2" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat gun"></div>
+            <p>Assalto</p>
+          </div>
+          <div id="3" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat thieft"></div>
+            <p>Furto</p>
+          </div>
+          <div id="4" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat emergency"></div>
+            <p>Emergência</p>
+          </div>
+
+          <div id="5" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat bomb"></div>
+            <p>Atentado</p>
+          </div>
+          <div id="6" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat talk"></div>
+            <p>Ameaça</p>
+          </div>
+          <div id="7" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat eye"></div>
+            <p>Suspeita</p>
+          </div>
+          <div id="8" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="cat other"></div>
+            <p>Outros</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h1>Forneça maiores informações:</h1>
+          <textarea type="text" id="Local" class="form-control" placeholder="Forneça maiores informações" required autofocus></textarea>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 local">
+          <h1>Informe o local do incidente:</h1>
+
+          <div><img src="css/img/map.png"> <h1 class="open"><a class="iframe" href="iframe.html">Adicionar localização</a></h1></div>
+
+          <select id="lugares">
+            <option selected>Selecionar</option>
+            <!--ZONA BARRA-->
+            <option>ZONA BARRA</option>
+            <option>Centro Olímpico de Treinamento</option>
+            <option>Centro Olímpico de Hóquei</option>
+            <option>Centro Olímpico de Tênis</option>
+            <option>Velódromo Olímpico do Rio</option>
+            <option>Centro Aquático Maria Lenk</option>
+            <option>Estádio Olímpico de Desportos Aquáticos</option>
+            <option>Arena Olímpica do Rio</option>
+            <option>Riocentro</option>
+            <option>Condomínio Reserva Uno</option>
+            <!--ZONA DEODORO-->
+            <option>ZONA DEODORO</option>
+            <option>Centro Nacional de Hipismo</option>
+            <option>Centro Nacional de Tiro</option>
+            <option>Parque do Pentatlo Moderno</option>
+            <option>Arena de Deodoro</option>
+            <option>Parque Radical</option>
+            <!--ZONA MARACANÃ-->
+            <option>ZONA MARACANÃ</option>
+            <option>Estádio do Maracanã</option>
+            <option>Estádio Olímpico João Havelangeo</option>
+            <option>Ginásio do Maracanãzinho</option>
+            <option>Sambódromo da Marquês de Sapucaí</option>
+            <option>Estádio São Januário</option>
+            <!--ZONA COPACABANA-->
+            <option>ZONA COPACABANA</option>
+            <option>Lagoa Rodrigo de Freitas</option>
+            <option>Praia de Copacabana</option>
+            <option>Marina da Glória</option>
+            <option>Parque do Flamengoo</option>
+          </select>
+
+          <input type="text" id="Local" class="form-control" placeholder="ou digitar nome do local" required autofocus>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 foto">
+          <div><img src="css/img/photo.png"> <h1 class="open"><a class="screen" href="screen.html" > Adicionar foto</a></h1></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 reporte">
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Reportar incidente</button>
+        </div>
+
+      </div><!-- /infos -->
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+    $("#1").click(function(){
+        $(".fire").addClass("y");
+        $(".gun").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".eye").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#2").click(function(){
+        $(".gun").addClass("y");
+        $(".fire").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".eye").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#3").click(function(){
+        $(".thieft").addClass("y");
+        $(".fire").removeClass("y");
+        $(".gun").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".eye").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#4").click(function(){
+        $(".emergency").addClass("y");
+        $(".fire").removeClass("y");
+        $(".gun").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".eye").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#5").click(function(){
+        $(".bomb").addClass("y");
+        $(".fire").removeClass("y");
+        $(".gun").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".eye").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#6").click(function(){
+        $(".talk").addClass("y");
+        $(".fire").removeClass("y");
+        $(".gun").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".eye").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#7").click(function(){
+        $(".eye").addClass("y");
+        $(".fire").removeClass("y");
+        $(".gun").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".other").removeClass("y");
+    });
+
+    $("#8").click(function(){
+        $(".other").addClass("y");
+        $(".fire").removeClass("y");
+        $(".gun").removeClass("y");
+        $(".thieft").removeClass("y");
+        $(".emergency").removeClass("y");
+        $(".bomb").removeClass("y");
+        $(".talk").removeClass("y");
+        $(".eye").removeClass("y");
+    });
+      </script>
+
+      <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+            <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <!-- Magnific Popup core JS file -->
+        <script src="js/magnific-popup.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+
+            $('.iframe, .screen').magnificPopup({
+              type: 'ajax'
+            });
+
+          });
+        </script>
+  </body>
+</html>
